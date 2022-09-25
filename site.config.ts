@@ -10,15 +10,15 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'knitorious',
-  domain: 'knitorious MEG',
-  author: 'kpow',
+  domain: 'Knitorious MEG',
+  author: 'Knitorious MEG',
 
   // open graph metadata (optional)
   description: '',
 
   // social usernames (optional)
-  twitter: '',
-  github: 'kpow',
+  twitter: 'knitoriousmeg',
+  github: '',
   linkedin: '',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`

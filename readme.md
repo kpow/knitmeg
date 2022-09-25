@@ -1,20 +1,7 @@
-<p align="center">
-  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
-    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
-  </a>
-</p>
 
-# Next.js Notion Starter Kit
+# KnitoriousMEG
 
-> The perfect starter kit for building websites with Next.js and Notion.
-
-[![Build Status](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml/badge.svg)](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/actions/workflows/build.yml) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
-
-## Intro
-
-This repo is what I use to power my personal blog and portfolio site [transitivebullsh.it](https://transitivebullsh.it).
-
-It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
+> Site Built with Next.js and Notion.
 
 ## Features
 
@@ -30,11 +17,6 @@ It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notio
 - Quick search via CMD+K / CMD+P
 - Responsive for different devices
 - Optimized for Next.js and Vercel
-
-## Demos
-
-- [Default demo](https://nextjs-notion-starter-kit.transitivebullsh.it) - Deployed from the `main` branch
-- [My site](https://transitivebullsh.it) - Deployed from the `transitive-bullshit` branch
 
 ## Setup
 
@@ -121,18 +103,6 @@ Every notion block gets its own unique classname, so you can target individual b
 
 Dark mode is fully supported and can be toggled via the sun / moon icon in the footer.
 
-## Automatic Social Images
-
-<p align="center">
-  <img alt="Example social image" src="https://user-images.githubusercontent.com/552829/162001133-34d4cf24-123a-4569-a540-f683b22830d1.jpeg" width="600">
-</p>
-
-All Open Graph and social meta tags are generated from your Notion content, which makes social sharing look professional by default.
-
-Social images are generated automatically using headless chrome. You can tweak the default React template for social images by editing [api/social-images.tsx](./pages/api/social-image.tsx).
-
-You can view an example social image live in production [here](https://transitivebullsh.it/api/social-image?id=dfc7f709-ae3e-42c6-9292-f6543d5586f0).
-
 ## Automatic Table of Contents
 
 <p align="center">
@@ -144,43 +114,3 @@ By default, every article page will have a table of contents displayed as an `as
 If a page has less than `minTableOfContentsItems` (default 3), the table of contents will be hidden. It is also hidden on the index page and if the browser window is too small.
 
 This table of contents uses the same logic that Notion uses for its built-in Table of Contents block (see [getPageTableOfContents](https://github.com/NotionX/react-notion-x/blob/master/packages/notion-utils/src/get-page-table-of-contents.ts) for the underlying logic).
-
-## Responsive
-
-<p align="center">
-  <img alt="Mobile article page" src="https://user-images.githubusercontent.com/552829/160132983-c2dd5830-80b3-4a0e-a8f1-abab5dbeed11.jpg" width="300">
-</p>
-
-All pages are designed to be responsive across common device sizes.
-
-## Analytics
-
-Analytics are an optional feature that are easy to enable if you want.
-
-### Fathom Analytics
-
-[Fathom](https://usefathom.com/ref/42TFOZ) provides a lightweight alternative to Google Analytics.
-
-To enable, just add a `NEXT_PUBLIC_FATHOM_ID` environment variable, which will only be used in production.
-
-### PostHog Analytics
-
-[PostHog](https://posthog.com/) provides a lightweight, **open source** alternative to Google Analytics.
-
-To enable, just add a `NEXT_PUBLIC_POSTHOG_ID` environment variable, which will only be used in production.
-
-## Environment Variables
-
-If you're using Redis, analytics, or any other feature which requires environment variables, then you'll need to [add them to your Vercel project](https://vercel.com/docs/concepts/projects/environment-variables).
-
-If you want to test your redis builds with GitHub Actions, then you'll need to edit the [default build action](./.github/workflows/build.yml) to add `REDIS_HOST` and `REDIS_PASSWORD`. Here is an [example from my personal branch](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/blob/transitive-bullshit/.github/workflows/build.yml#L17-L21). You'll also need to add these environment variables to your GitHub repo as [repository secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
-
-## Contributing
-
-See the [contribution guide](contributing.md) and join our amazing list of [contributors](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/graphs/contributors)!
-
-## License
-
-MIT © [Travis Fischer](https://transitivebullsh.it)
-
-Support my open source work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
