@@ -6,19 +6,61 @@
  * whereas our goal with this site is to adjust Notion's styling in a few key
  * places to add some flare.
  */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 
 .notion {
   --notion-max-width: 600px;
   --notion-header-height: 54px;
+  background-image: url('/body_bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 50px;
+}
+
+.notion-title {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 3.5rem;
+}
+
+.notion-app {
+  background-color: #494134;
 }
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
+  background-color: #FFF;
+  margin-top: 70px;
+  border-radius: 24px;
 }
 
 .index-page {
   --notion-max-width: 900px;
+  background-color: #FFF;
+  border-radius: 24px;
+}
+
+@media (min-width: 1300px) and (min-height: 300px) {
+
+  .notion-page-content-has-aside .notion-page-content-inner {
+    width: var(--notion-max-width);
+    max-width: var(--notion-max-width);
+    padding-right: 30px;
+  }
+}
+
+.notion-page-icon-image span,
+.notion-page-icon-image {
+  border-radius: 0 !important;
+}
+
+.notion-page-cover-wrapper {
+  display: none;
+}
+
+.notion-collection-page-properties {
+  display: none;
 }
 
 .notion-text {
@@ -348,18 +390,18 @@
   backdrop-filter: saturate(180%) blur(16px);
 }
 
-.dark-mode .notion-header {
+/* .dark-mode .notion-header {
   background: transparent;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(8px);
-}
+} */
 
 /* Workaround for Firefox not supporting backdrop-filter yet */
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   .dark-mode .notion-header {
     background: hsla(203, 8%, 20%, 0.8);
   }
-}
+} */
 
 .notion-bookmark:hover {
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
