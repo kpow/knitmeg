@@ -57,13 +57,19 @@
   transition: all 100ms ease-out;
 }
 
-.action:hover .actionBgPane {
+.action .actionBgPane {
   width: 100%;
   height: 100%;
   transition: all 100ms ease-out;
 }
 
-.action:hover svg {
+.action:hover .actionBgPane {
+  width: 0%;
+  height: 0%;
+  transition: all 100ms ease-out;
+}
+
+.action svg {
   transition: fill 100ms ease-out;
   fill: var(--bg-color);
 }
@@ -75,6 +81,7 @@
 .facebook .actionBgPane {
   background: #3b5998;
 }
+
 .facebook:hover {
   border-color: #3b5998;
 }
@@ -82,13 +89,15 @@
 .twitter .actionBgPane {
   background: #2795e9;
 }
-.twitter:hover {
+
+.twitter {
   border-color: #2795e9;
 }
 
 .linkedin .actionBgPane {
   background: #0077b5;
 }
+
 .linkedin:hover {
   border-color: #0077b5;
 }
@@ -96,6 +105,7 @@
 .github .actionBgPane {
   background: #c9510c;
 }
+
 .github:hover {
   border-color: #c9510c;
 }
@@ -103,6 +113,7 @@
 .youtube .actionBgPane {
   background: #FF0000;
 }
+
 .youtube:hover {
   border-color: #FF0000;
 }
@@ -110,6 +121,7 @@
 .medium .actionBgPane {
   background: #00ab6c;
 }
+
 .medium:hover {
   border-color: #00ab6c;
 }
@@ -117,6 +129,7 @@
 .newsletter .actionBgPane {
   background: #777777;
 }
+
 .newsletter:hover {
   border-color: #777777;
 }
@@ -124,6 +137,7 @@
 .email .actionBgPane {
   background: #777;
 }
+
 .email:hover {
   border-color: #777;
 }
