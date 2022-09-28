@@ -6,6 +6,7 @@
  * whereas our goal with this site is to adjust Notion's styling in a few key
  * places to add some flare.
  */
+
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 
@@ -19,8 +20,8 @@
 }
 
 .notion-title {
-  font-family: 'Gochi Hand', cursive;
-  font-size: 3.5rem;
+  font-family: 'Gochi Hand', monospace;
+  font-size: 3rem;
 }
 
 .notion-app {
